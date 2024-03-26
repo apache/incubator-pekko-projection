@@ -31,12 +31,12 @@ object Dependencies {
     val connectors = PekkoConnectorsDependency.version
     val connectorsKafka = PekkoConnectorsKafkaDependency.version
     val slick = "3.3.3"
-    val scalaTest = "3.2.14"
+    val scalaTest = "3.2.18"
     val testContainers = "1.15.3"
     val junit = "4.13.2"
     val h2Driver = "2.2.224"
     val jackson = "2.16.2" // this should match the version of jackson used by pekko-serialization-jackson
-    val logback = "1.2.13"
+    val logback = "1.3.14"
   }
 
   object Compile {
@@ -98,7 +98,7 @@ object Dependencies {
   }
 
   object Examples {
-    val hibernate = "org.hibernate" % "hibernate-core" % "5.4.33"
+    val hibernate = "org.hibernate" % "hibernate-core" % "5.6.15.Final"
 
     val pekkoPersistenceTyped = "org.apache.pekko" %% "pekko-persistence-typed" % Versions.pekko
     val pekkoClusterShardingTyped = "org.apache.pekko" %% "pekko-cluster-sharding-typed" % Versions.pekko
